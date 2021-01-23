@@ -1,0 +1,22 @@
+{
+  "name": "fylo",
+  "version": "1.0.0",
+  "description": "![Design preview for the Fylo landing page with two column layout challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PawanJS/fylotwo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PawanJS/fylotwo/issues"
+  },
+  "homepage": "https://github.com/PawanJS/fylotwo#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

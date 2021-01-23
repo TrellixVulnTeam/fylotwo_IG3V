@@ -1,0 +1,31 @@
+.navigation {
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    width: 13rem;
+    height: 5rem;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+
+    &--item {
+      @supports not (gap: 5rem) {
+        & {
+          margin-left: 5rem;
+        }
+      }
+    }
+
+    &--link {
+      text-decoration: none;
+      color: $very-dark-blue;
+    }
+  }
+}
