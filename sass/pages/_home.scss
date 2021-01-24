@@ -1,7 +1,63 @@
+.form {
+  &__email {
+    padding: 1.2rem 1.5rem;
+    display: block;
+    width: 60%;
+    font-family: inherit;
+    color: $light-gray;
+    border-radius: 5px;
+
+    &:focus {
+      outline: none;
+    }
+
+    @media screen and (max-width: 55em) {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 55em) {
+    width: 100%;
+  }
+}
+
+.main__img {
+  display: block;
+  width: 100%;
+}
+
+.btn {
+  border: none;
+  background: $bright-blue;
+  padding: 1.2rem 3rem;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $light-grayish-blue;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: rgba($bright-blue, 0.9);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  @media screen and (max-width: 55em) {
+    width: 100%;
+  }
+}
+
 .attribution {
-  font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+  transition: color 0.2s;
+
+  &:hover {
+    color: $moderate-cyan;
+  }
 }

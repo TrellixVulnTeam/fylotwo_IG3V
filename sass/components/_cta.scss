@@ -1,0 +1,20 @@
+.cta {
+  background-color: $unsaturated-blue;
+  padding: 10rem;
+  color: $light-grayish-blue;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 5rem;
+
+  @media screen and (max-width: 55em) {
+    padding: 7rem;
+  }
+
+  @media screen and (max-width: 40em) {
+    padding: 5rem;
+  }
+
+  & .form__email {
+    border: none;
+  }
+}

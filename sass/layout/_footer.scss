@@ -1,0 +1,95 @@
+.footer {
+  background-color: $very-dark-blue;
+  color: $light-grayish-blue;
+  padding: 10rem;
+
+  @media screen and (max-width: 55em) {
+    padding: 7rem;
+  }
+
+  @media screen and (max-width: 40em) {
+    padding: 5rem;
+  }
+
+  &__logo {
+    width: 13rem;
+    height: 5rem;
+    fill: #fff;
+  }
+
+  &__contact {
+    span {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      padding-bottom: 2rem;
+      cursor: pointer;
+    }
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    fill: $light-grayish-blue;
+  }
+
+  &__information {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 5rem;
+  }
+
+  &__nav--item {
+    padding: 1rem;
+  }
+
+  &__nav--link {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.2s;
+
+    &:hover {
+      color: $moderate-cyan;
+    }
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    span {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      box-shadow: 0 0 0 0.2rem $light-grayish-blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: box-shadow 0.2s;
+
+      &:hover {
+        box-shadow: 0 0 0 0.2rem $moderate-cyan;
+      }
+
+      @supports not (gap: 2rem) {
+        & {
+          margin-left: 2rem;
+        }
+      }
+    }
+  }
+
+  &__icon-social {
+    width: 2.8rem;
+    height: 2.8rem;
+    fill: $light-grayish-blue;
+    transition: fill 0.2s;
+  }
+
+  &__social span:hover &__icon-social {
+    fill: $moderate-cyan;
+  }
+}
