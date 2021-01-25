@@ -16,9 +16,11 @@
   }
 
   &__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @media screen and (max-width: 55em) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__link-box {
