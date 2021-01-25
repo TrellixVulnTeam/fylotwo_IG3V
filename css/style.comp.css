@@ -65,10 +65,11 @@ html {
   @media screen and (max-width: 40em) {
     .feature {
       padding: 5rem; } }
-  .feature__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
+  @media screen and (max-width: 55em) {
+    .feature__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
   .feature__link-box {
     width: max-content;
     border-bottom: 1px solid #3c9f8f; }
